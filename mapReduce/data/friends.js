@@ -1,4 +1,5 @@
 var friends = [
+    //ingredients
     {
         name:"Ahmed",
         photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
@@ -48,7 +49,7 @@ var friends = [
         ]
     },
     {
-        name: "Toshinori Yagi",
+        name: "Toshinori Yagi (All Might)",
         photo: "https://vignette.wikia.nocookie.net/bokunoheroacademia/images/5/55/All_Might_Hero_Form_Full_Body.png/revision/latest/scale-to-width-down/311?cb=20160116011411",
         scores:[
             3,

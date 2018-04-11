@@ -16,8 +16,6 @@ var newFriend =     {
         2
       ]
 }
-// console.log(newFriend)
-        // console.log(newFriend.scores)
         // Find the friend match
         // function to subtract arrays and create a new one with the result    
         let subtract=(arr1, arr2)=> {
@@ -26,7 +24,7 @@ var newFriend =     {
             });
         }
         let add = (x,y) =>{return x+y}
-        
+        console.log("==== Below is the sliced set of ingredients ====")
         console.log(subtract(friends.friends[0].scores, newFriend.scores))
         // this is the sliced set of ingredients
         
@@ -37,9 +35,12 @@ var newFriend =     {
             })
             // subtract(masterArr, arr1)
         }
+        console.log("==== Below are the sandwiches we made ====")        
+        console.log(getScoreDiff(friends.friends, newFriend.scores))
         let getMatch= (masterArr, arr)=>{
             let bestScore = Math.min.apply(null, getScoreDiff(masterArr, arr))
             let match = getScoreDiff(masterArr, arr).indexOf(bestScore)
             return masterArr[match].name
         }
+        
         console.log(getMatch(friends.friends, newFriend.scores), "is your new best friend")
