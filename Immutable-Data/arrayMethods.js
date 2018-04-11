@@ -10,4 +10,4 @@ let noKingJs= noKing.toJS()
 
 console.log("Replaced King with Saitama", noKingJs)
 console.log("=============")
-console.log("We can see that Sclass has not changed", sClass.get(4))
+console.log("We can see that sClass has not changed", sClass.get(4))

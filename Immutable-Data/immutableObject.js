@@ -15,5 +15,6 @@ let meet = (greeting, name)=>{
     return `${greeting} ${name}`
 }
 // Examples of how pure functions may interract with an immutable data structure
-console.log(meet(obj.get("Greeting"),obj.get("Name")))
-console.log(meet(obj2.get("Greeting"), obj3.get("Name")))
+console.log("Original obj:", meet(obj.get("Greeting"),obj.get("Name")))
+console.log("=============")
+console.log("Copied obj's:",meet(obj2.get("Greeting"), obj3.get("Name")))
